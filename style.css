@@ -1,0 +1,951 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding-left: 15px;
+  margin: auto;
+  padding-right: 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+p {
+  font-size: 14px;
+  color: black;
+  font-family: "Raleway", serif;
+  word-spacing: 5px;
+  max-width: 500px;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  font-weight: 500;
+}
+
+.header-main.sticky-header .logo {
+  filter: invert(1);
+}
+
+.header-main.sticky-header .header-inner .menu ul li a {
+  color: black;
+}
+
+.header-main.sticky-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  transition: 0.5s;
+  background-color: white;
+  z-index: 999;
+  color: black;
+}
+
+.header-main.sticky-header .menu ul li a {
+  color: black;
+}
+
+.header-main.sticky-header .container {
+  max-width: 100% !important;
+}
+
+.header-main {
+  width: 100%;
+  float: left;
+  position: absolute;
+  transition: 0.5s;
+  top: 0px;
+  left: 0;
+  z-index: 999;
+}
+.header-main .header-inner {
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-main .header-inner .logo {
+  width: 120px;
+  float: left;
+}
+.header-main .header-inner .logo img {
+  width: 100%;
+}
+.header-main .header-inner .menu {
+  width: auto;
+  float: left;
+}
+.header-main .header-inner .menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+.header-main .header-inner .menu ul li {
+  list-style: none;
+  padding: 30px 0;
+  position: relative;
+}
+.header-main .header-inner .menu ul li:hover .dropdown {
+  transform: scaleY(1);
+}
+.header-main .header-inner .menu ul li .dropdown2 {
+  width: 50px !important;
+}
+.header-main .header-inner .menu ul li .dropdown2 ul li {
+  padding-left: 15px !important;
+}
+.header-main .header-inner .menu ul li .dropdown {
+  width: 250px;
+  float: left;
+  background-color: #faf9f5;
+  position: absolute;
+  top: 78px;
+  left: -20px;
+  padding: 20px 0;
+  transform: scaleY(0);
+  transition: 0.5s;
+  transform-origin: top;
+}
+.header-main .header-inner .menu ul li .dropdown ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.header-main .header-inner .menu ul li .dropdown ul li {
+  list-style: none;
+  padding: 0;
+  padding-left: 30px;
+}
+.header-main .header-inner .menu ul li .dropdown ul li a {
+  color: black;
+  text-transform: uppercase;
+  padding: 0;
+}
+.header-main .header-inner .menu ul li .dropdown ul li a:hover {
+  color: #b56953;
+}
+.header-main .header-inner .menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding: 30px 0;
+  color: white;
+  font-family: "Raleway", serif;
+}
+.header-main .header-inner .menu ul li a i {
+  margin-left: 5px;
+}
+.header-main .header-inner .menu ul li a:hover {
+  color: #b56953;
+}
+
+.banner-main {
+  width: 100%;
+  float: left;
+}
+.banner-main .banner-inner {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+.banner-main .banner-inner .slick-prev {
+  left: 20px;
+  z-index: 2;
+  text-align: center;
+  line-height: 40px;
+}
+.banner-main .banner-inner .slick-prev:before {
+  content: "\f104";
+  font-family: fontawesome;
+  font-size: 50px;
+}
+.banner-main .banner-inner .slick-next {
+  right: 20px;
+  z-index: 2;
+  text-align: center;
+  line-height: 40px;
+}
+.banner-main .banner-inner .slick-next:before {
+  content: "\f105";
+  font-family: fontawesome;
+  font-size: 50px;
+}
+.banner-main .banner-inner .banner-images {
+  width: 100%;
+  float: left;
+  height: 600px;
+  position: relative;
+}
+.banner-main .banner-inner .banner-images img {
+  width: 100%;
+  height: 100%;
+}
+.banner-main .banner-inner .banner-images .banner-text {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+}
+.banner-main .banner-inner .banner-images .banner-text p {
+  color: white;
+}
+
+.banner-down {
+  width: 100%;
+  float: left;
+}
+.banner-down .breakfast-main {
+  width: 100%;
+  float: left;
+  padding-top: 20px;
+}
+.banner-down .breakfast-main .left-section {
+  width: 30%;
+  float: left;
+  height: 405px;
+  background-color: #F6F3EA;
+}
+.banner-down .breakfast-main .left-section .check-left {
+  width: 100%;
+  height: 100%;
+  height: 405px;
+}
+.banner-down .breakfast-main .left-section .check-left img {
+  width: 100%;
+  height: 100%;
+}
+.banner-down .breakfast-main .left-section .input-main {
+  width: 100%;
+  float: left;
+  padding: 30px 20px;
+}
+.banner-down .breakfast-main .left-section .input-main ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.banner-down .breakfast-main .left-section .input-main ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+.banner-down .breakfast-main .left-section .input-main ul li button {
+  width: 100%;
+  float: left;
+  padding: 17px 22px;
+  border: 1px solid gray;
+  background: none;
+}
+.banner-down .breakfast-main .left-section .input-main ul li button:hover {
+  background-color: #b56953;
+  color: white;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult {
+  width: auto;
+  float: left;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box {
+  width: 180px;
+  float: left;
+  border: 1px solid rgb(202, 200, 200);
+  padding: 15px;
+  font-family: "Raleway", serif;
+  position: relative;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box:hover .adult-dropdown {
+  display: block;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box:hover {
+  cursor: pointer;
+  border-color: black;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box i {
+  float: right;
+  font-size: 20px;
+  color: gray;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box .adult-dropdown {
+  width: 200px;
+  float: left;
+  position: absolute;
+  background-color: #faf9f5;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  display: none;
+  border: 1px solid rgb(202, 200, 200);
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box .adult-dropdown .drop1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px !important;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box .adult-dropdown .drop1 button {
+  width: 180px;
+  height: 40px;
+  float: left;
+  border: 1px solid black;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box .adult-dropdown .drop1 button:hover {
+  background-color: #b56953;
+  color: white;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box .adult-dropdown .drop1 .drop-left span {
+  display: block;
+  font-size: 10px;
+  padding: 0;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box .adult-dropdown .drop1 .drop-left p {
+  line-height: 15px;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box .adult-dropdown .drop1 .drop-right select {
+  width: 50px;
+  height: 25px;
+  float: left;
+  border: 1px solid gray;
+}
+.banner-down .breakfast-main .left-section .input-main ul li .adult .adult-box .adult-dropdown .drop1 .drop-right select:focus {
+  outline: none;
+}
+.banner-down .breakfast-main .left-section .input-main ul li p {
+  color: black !important;
+}
+.banner-down .breakfast-main .left-section .input-main ul li input {
+  width: 180px;
+  padding: 15px 15px;
+  border: 1px solid rgb(202, 200, 200);
+  background: none;
+  color: gray;
+}
+.banner-down .breakfast-main .left-section .input-main ul li input i {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.banner-down .breakfast-main .left-section .input-main ul li input:focus {
+  outline: none;
+}
+.banner-down .breakfast-main .left-section .input-main ul li input:hover {
+  border-color: black;
+  cursor: pointer;
+}
+.banner-down .breakfast-main .right-section {
+  width: 70%;
+  float: right;
+  padding-left: 20px;
+  height: 405px;
+  position: relative;
+  overflow: hidden;
+}
+.banner-down .breakfast-main .right-section .break-image {
+  width: 100%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
+.banner-down .breakfast-main .right-section .break-image img {
+  transform: translateX(-10px);
+  transition: 0.5s;
+  width: 105%;
+  height: 100%;
+}
+.banner-down .breakfast-main .right-section .break-image:hover img {
+  transition: 0.5s;
+  transform: translateX(0px);
+}
+.banner-down .breakfast-main .right-section .breakfast {
+  width: 250px;
+  float: left;
+  height: 150px;
+  position: absolute;
+  top: 120px;
+  bottom: 0;
+  left: 20px;
+  padding: 20px;
+  background-color: #F6F3EA;
+  text-align: center;
+  padding-top: 40px;
+  transition: 0.5s;
+}
+.banner-down .breakfast-main .right-section .breakfast:hover {
+  padding-left: 50px;
+  transition: 0.5s;
+}
+.banner-down .breakfast-main .right-section .breakfast h1 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.menu-main {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.menu-main .menu-left {
+  width: 70%;
+  float: left;
+  padding-right: 20px;
+  height: 405px;
+  position: relative;
+}
+.menu-main .menu-left .menu-image {
+  width: 100%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
+.menu-main .menu-left .menu-image img {
+  width: 105%;
+  height: 100%;
+  transform: translateX(-10px);
+  transition: 0.5s;
+}
+.menu-main .menu-left .menu-image:hover img {
+  transform: translateX(0);
+  transition: 0.5s;
+}
+.menu-main .menu-left .menu-text {
+  width: 250px;
+  float: left;
+  position: absolute;
+  top: 120px;
+  height: 150px;
+  left: 0;
+  background-color: #F6F3EA;
+  padding: 20px;
+  padding-top: 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+.menu-main .menu-left .menu-text:hover {
+  padding-left: 50px;
+  transition: 0.5s;
+}
+.menu-main .menu-left .menu-text h1 {
+  font-size: 30px;
+  color: black;
+}
+.menu-main .menu-right {
+  width: 30%;
+  float: right;
+  height: 405px;
+  background-image: url(images/map-type-image.jpg);
+  background-size: cover;
+  padding-right: 50px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.menu-main .menu-right .menu-right-text {
+  width: 100%;
+  float: left;
+  text-align: left;
+  padding: 20px;
+}
+.menu-main .menu-right .menu-right-text h1 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+}
+.menu-main .menu-right .menu-right-text p {
+  font-family: "Raleway", serif;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.menu-main .menu-right .menu-right-text .read {
+  font-size: 12px;
+  color: black;
+}
+.menu-main .menu-right .menu-right-text .read:hover {
+  color: #b56953;
+}
+.menu-main .menu-right .great {
+  text-align: center;
+}
+
+.banner2-main {
+  width: 100%;
+  float: left;
+  height: 600px;
+  margin-top: 20px;
+}
+.banner2-main .banner2-image {
+  width: 100%;
+  float: left;
+  height: 600px;
+  background-size: cover;
+  background-image: url(images/banner2.jpg);
+  position: relative;
+}
+.banner2-main .banner2-image img {
+  width: 100%;
+  height: 100%;
+}
+.banner2-main .banner2-image .banner2-text {
+  width: 650px;
+  height: 170px;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 20px 40px;
+  margin: auto;
+  background-color: #F6F3EA;
+  padding: 20px;
+  padding-top: 40px;
+}
+.banner2-main .banner2-image .banner2-text ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner2-main .banner2-image .banner2-text ul li {
+  list-style: none;
+  position: relative;
+}
+.banner2-main .banner2-image .banner2-text ul li .box1 {
+  width: 100%;
+  float: left;
+}
+.banner2-main .banner2-image .banner2-text ul li .box1:hover .icon {
+  transform: translateY(-10px);
+  transition: 0.5s;
+  position: relative;
+}
+.banner2-main .banner2-image .banner2-text ul li .box1 p {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+.banner2-main .banner2-image .banner2-text ul li .box1:hover .circle {
+  opacity: 1;
+  transition: 0.5s;
+}
+.banner2-main .banner2-image .banner2-text ul li .icon {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  z-index: 20;
+  transition: 0.5s;
+}
+.banner2-main .banner2-image .banner2-text ul li .icon svg {
+  width: 100%;
+  height: 100% !important;
+}
+.banner2-main .banner2-image .banner2-text ul li .circle {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.colony-main {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.colony-main .colony-inner {
+  width: 100%;
+  float: left;
+}
+.colony-main .colony-inner .colony-image {
+  width: 100%;
+  float: left;
+  height: 600px;
+  background-image: url(images/colony.jpg);
+  background-size: cover;
+  padding-top: 225px;
+}
+.colony-main .colony-inner .colony-image img {
+  width: 100%;
+  height: 100%;
+}
+.colony-main .colony-inner .colony-image .colony-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: auto;
+  height: 150px;
+  padding: 0 50px;
+  background-color: #F6F3EA;
+}
+.colony-main .colony-inner .colony-image .colony-text .icon i {
+  font-size: 40px;
+}
+.colony-main .colony-inner .colony-image .colony-text .sign button {
+  width: 200px;
+  height: 50px;
+  border: 1px solid gray;
+  text-transform: uppercase;
+  color: black;
+  background: none;
+  transition: 0.5s;
+}
+.colony-main .colony-inner .colony-image .colony-text .sign button:hover {
+  transition: 0.5s;
+  color: white;
+  background-color: #b56953;
+}
+.colony-main .colony-inner .colony-image .colony-text .email input {
+  width: 350px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid gray !important;
+}
+.colony-main .colony-inner .colony-image .colony-text .email input:focus {
+  outline: none;
+}
+.colony-main .colony-inner .colony-image .colony-text .heading h1 {
+  font-size: 30px;
+  color: black;
+}
+
+.footer-main {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.footer-main .footer-inner {
+  width: 100%;
+  float: left;
+  padding: 80px 0;
+  background-color: #faf9f5;
+}
+.footer-main .footer-inner h1 {
+  font-size: 25px;
+  color: black;
+  margin-bottom: 20px;
+}
+.footer-main .footer-inner p {
+  font-size: 15px;
+  color: black;
+}
+.footer-main .footer-inner p .show {
+  font-size: 12px !important;
+  color: black;
+}
+.footer-main .footer-inner p span:hover {
+  color: #b56953;
+  cursor: pointer;
+}
+.footer-main .footer-inner .footer-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start !important;
+  width: 100%;
+  float: left;
+}
+.footer-main .footer-inner .footer-text .footer1 {
+  width: 40%;
+  padding-right: 20px;
+}
+.footer-main .footer-inner .footer-text .footer1 .footer-image {
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+}
+.footer-main .footer-inner .footer-text .footer2 {
+  width: 20%;
+  float: left;
+  padding-right: 20px;
+}
+.footer-main .footer-inner .footer-text .footer2 .payment {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.footer-main .footer-inner .footer-text .footer2 .payment ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 20px;
+}
+.footer-main .footer-inner .footer-text .footer2 .payment ul li {
+  list-style: none;
+}
+.footer-main .footer-inner .footer-text .footer2 .payment ul li p i {
+  font-size: 30px;
+  color: gray;
+}
+.footer-main .footer-inner .footer-text .footer2 .payment ul li p i:hover {
+  color: #b56953;
+}
+.footer-main .copyright {
+  width: 100%;
+  float: left;
+  background-color: #b56953;
+  text-align: center;
+}
+.footer-main .copyright p {
+  max-width: 100%;
+  color: white;
+  padding: 10px;
+}
+
+.bars {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-down .left-section {
+    height: 355px !important;
+  }
+  .banner-down .left-section .check-left {
+    height: 355px !important;
+  }
+  .banner-down .left-section .input-main {
+    padding: 15px 0 !important;
+  }
+  .banner-down .left-section .input-main ul {
+    gap: 10px !important;
+  }
+  .banner-down .right-section {
+    height: 355px !important;
+  }
+  .banner-down .right-section .breakfast {
+    top: 100px !important;
+  }
+  .menu-main .menu-left {
+    height: 355px;
+  }
+  .menu-main .menu-left .menu-text {
+    top: 100px;
+  }
+  .menu-main .menu-right {
+    height: 355px;
+    padding: 0;
+  }
+  .menu-main .menu-right .menu-right-text {
+    padding: 15px;
+  }
+  .menu-main .menu-right .menu-right-text p {
+    font-size: 13px;
+  }
+  .banner2-main {
+    height: 500px;
+  }
+  .banner2-main .banner2-image {
+    height: 500px;
+  }
+  .colony-main .colony-inner .colony-image .colony-text .icon i {
+    font-size: 30px;
+  }
+  .colony-main .colony-inner .colony-image .colony-text .heading h1 {
+    font-size: 20px;
+  }
+  .colony-main .colony-inner .colony-image .colony-text .email input {
+    width: 125px;
+  }
+  .colony-main .colony-inner .colony-image .colony-text .sign button {
+    width: 120px;
+  }
+  .footer-main .footer-inner {
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  .footer-main .footer-inner .footer-text {
+    flex-wrap: wrap;
+  }
+  .footer-main .footer-inner .footer-text .footer1 {
+    width: 50% !important;
+    margin-top: 50px;
+  }
+  .footer-main .footer-inner .footer-text .footer2 {
+    width: 50% !important;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bars {
+    margin-right: 10px;
+    display: block;
+  }
+  .bars i {
+    color: white;
+  }
+  .header-main.sticky-header .bars i {
+    color: black;
+  }
+  .header-main.sticky-header .menu ul li a {
+    color: white !important;
+  }
+  .close {
+    display: block;
+  }
+  .header-main .header-inner {
+    padding-top: 10px;
+    align-items: flex-start;
+  }
+  .header-main .header-inner .logo {
+    margin-left: 10px;
+  }
+  .header-main .header-inner .menu {
+    display: none;
+    width: 100%;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 100vh;
+    padding: 20px;
+    padding-top: 50px;
+  }
+  .header-main .header-inner .menu p i {
+    color: white;
+    float: right;
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .header-main .header-inner .menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .header-main .header-inner .menu ul li {
+    padding: 0;
+    width: 100%;
+    border-top: 1px solid white;
+  }
+  .header-main .header-inner .menu ul li .dropdown {
+    top: 20px;
+    left: 0px;
+  }
+  .header-main .header-inner .menu ul li a {
+    padding: 0;
+  }
+  .header-main.show-menu .menu {
+    display: block;
+  }
+  .banner-main .banner-images {
+    height: 400px !important;
+  }
+  .banner-main .banner-text h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 900px) {
+  .banner-main .banner-text h1 {
+    color: red;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-main .banner-text p {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 900px) {
+  .banner-main .banner-text p {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-main .banner-inner .slick-prev:before {
+    font-size: 40px;
+  }
+  .banner-main .banner-inner .slick-next:before {
+    font-size: 40px;
+  }
+  .banner-down .breakfast-main .left-section {
+    width: 100% !important;
+  }
+  .banner-down .breakfast-main .right-section {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .banner-down .breakfast-main .right-section .breakfast {
+    left: 0;
+  }
+  .menu-main .menu-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .menu-main .menu-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .banner2-main .banner2-text {
+    width: 85% !important;
+    padding-top: 20px !important;
+  }
+  .banner2-main .banner2-text .box1 {
+    width: 60% !important;
+  }
+  .banner2-main .banner2-text .box1 p {
+    height: 30px;
+  }
+  .banner2-main .banner2-text .circle {
+    top: -10px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .colony-main .colony-inner .colony-image {
+    height: 400px;
+  }
+  .colony-main .colony-inner .colony-text {
+    display: none !important;
+  }
+  .footer-main .footer-inner .footer-text .footer1 {
+    width: 100% !important;
+  }
+  .footer-main .footer-inner .footer-text .footer2 {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
